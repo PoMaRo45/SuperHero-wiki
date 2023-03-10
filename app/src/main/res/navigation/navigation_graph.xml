@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@+id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.listapi.fragments.listScreenFragment"
+        android:label="fragment_list_screen"
+        tools:layout="@layout/fragment_list_screen" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.listapi.fragments.FavoritosFragment"
+        android:label="@string/favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_favouritesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.listapi.fragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/filterList"
+        android:name="com.example.listapi.fragments.FilterList"
+        android:label="@string/filtros"
+        tools:layout="@layout/fragment_filter_list" >
+        <action
+            android:id="@+id/action_filterList_to_recyclerFilteredFragment"
+            app:destination="@id/recyclerFilteredFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerFilteredFragment"
+        android:name="com.example.listapi.RecyclerFilteredFragment"
+        android:label="fragment_recycler_filtered"
+        tools:layout="@layout/fragment_recycler_filtered" >
+        <action
+            android:id="@+id/action_recyclerFilteredFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FilterList"
+    android:background="#838080">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/personajes_buenos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="125dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/boton_normal"
+        android:text="👼 Personajes buenos 👼"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/personajes_malos"
+        app:layout_constraintTop_toBottomOf="@id/personajes_buenos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/boton_normal"
+        android:text="😈 Personajes Malos 😈"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/personajes_de_marvel"
+        app:layout_constraintTop_toBottomOf="@id/personajes_malos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/boton_marvel"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/personajes_dc"
+        app:layout_constraintTop_toBottomOf="@id/personajes_de_marvel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/boton_dc"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.listScreenFragment">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_card"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here ..."
+            android:textColorLink="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:queryBackground="@android:color/transparent"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        tools:listitem="@layout/item_recycle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/material_card"
+        android:background="#838080"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/boton_ver_mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:textColor="#FFEB3B"
+        android:text="⚡ Ver Mas ⚡"
+        android:fontFamily="@font/vermas_font"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

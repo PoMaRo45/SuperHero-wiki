@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">listAPI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="favoritos">FAVORITOS</string>
+    <string name="filtros">FILTROS</string>
+</resources>
